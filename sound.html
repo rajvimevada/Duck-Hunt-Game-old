@@ -1,0 +1,21 @@
+<html>
+   <head> 
+      <meta name="viewport" content="width=device-width, initial-scale=1"> 
+   </head> 
+   <body onclick="play()"> 
+      <audio id="audio1" src="http://127.0.0.1:5500/shoot.mp3"></audio> 
+      <!-- <button onclick="play()">play</button>  -->
+      <script type="text/javascript">
+function play() {//  ww w . jav a 2  s . c  o  m
+    var audio = document.getElementById('audio1');
+    if (audio.paused) {
+        audio.play();
+    }else{
+        audio.pause();
+        audio.currentTime = 0
+    }
+}
+
+      </script>  
+   </body>
+</html>
